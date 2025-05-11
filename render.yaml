@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: insta-dm-bot
+    env: python
+    repo: https://github.com/hridayarya52/insta_dm_bot.git
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot_code.py
+    autoDeploy: true
